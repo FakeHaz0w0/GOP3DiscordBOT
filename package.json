@@ -1,0 +1,13 @@
+{
+  "name": "discord-bot-24-7",
+  "version": "1.0.0",
+  "description": "A simple Discord bot running 24/7 using GitHub Actions (free setup)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "express": "^4.21.1"
+  }
+}
