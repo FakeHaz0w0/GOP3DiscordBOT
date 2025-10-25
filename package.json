@@ -1,7 +1,7 @@
 {
   "name": "discord-bot-24-7",
   "version": "2.0.0",
-  "description": "Added New Stuff And Recoded :D",
+  "description": "Recoded update",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -12,8 +12,7 @@
     "discord.js": "^14.16.3",
     "play-dl": "^1.9.9",
     "express": "^4.18.2",
-    "node-fetch": "^3.4.2"
+    "dotenv": "^16.4.5"
   },
   "type": "module"
 }
-
