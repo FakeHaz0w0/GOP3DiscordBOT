@@ -1,0 +1,29 @@
+name: Run Discord Bot
+
+on:
+  workflow_dispatch:   # allows manual runs
+  push:                # runs when you push new code
+  schedule:
+    - cron: "0 */4 * * *"  # runs every 4 hours (24/7 coverage via overlap)
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355  # just under 6-hour GitHub Actions limit
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run the bot
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          PORT: 3000
+        run: npm start
