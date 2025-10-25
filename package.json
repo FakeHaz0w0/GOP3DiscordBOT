@@ -1,15 +1,19 @@
 {
   "name": "discord-bot-24-7",
   "version": "2.0.0",
-  "description": "Discord bot with music and moderation (MVP)",
+  "description": "Added New Stuff And Recoded :D",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "deploy-commands": "node deploy-commands.js"
   },
   "dependencies": {
-    "discord.js": "^14.16.3",
     "@discordjs/voice": "^0.16.0",
-    "ytdl-core": "^4.11.1",
-    "express": "^4.18.2"
-  }
+    "discord.js": "^14.16.3",
+    "play-dl": "^1.9.9",
+    "express": "^4.18.2",
+    "node-fetch": "^3.4.2"
+  },
+  "type": "module"
 }
+
