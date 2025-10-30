@@ -10,7 +10,7 @@ Requirements:
   pip install -U discord.py yt-dlp
   ffmpeg must be installed on the system PATH
 Env:
-  DISCORD_BOT_TOKEN - your bot token (never commit)
+   DISCORD_TOKEN  - your bot token (never commit)
 """
 import os
 import asyncio
@@ -313,8 +313,8 @@ async def music_command_error(ctx: commands.Context, error):
 
 # --- Run bot ---
 if __name__ == "__main__":
-    token = os.getenv("DISCORD_BOT_TOKEN")
+    token = os.getenv("DISCORD_TOKEN")
     if not token:
-        print("DISCORD_BOT_TOKEN environment variable not set.")
+        print("DISCORD_TOKEN environment variable not set.")
         raise SystemExit(1)
     bot.run(token)
