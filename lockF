@@ -1,4 +1,5 @@
 rm -rf node_modules package-lock.json
 npm install
 git add package-lock.json
+pip install -U discord.py yt-dlp
 git commit -m "Fix play-dl version and add lock file"
